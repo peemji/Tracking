@@ -60,10 +60,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a href="{{ url('map') }}">Maps</a>
                 </li>
                 <li>
-                    <a href="#">Test</a>
+                    <a href="{{ url('mikrotiks') }}">Test</a>
                 </li>
                 
             </ul>

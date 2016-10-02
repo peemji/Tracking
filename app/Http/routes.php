@@ -30,6 +30,8 @@ Route::get('hello', 'HelloController@index');
 
 Route::resource('articles', 'ArticlesController');
 Route::resource('mikrotiks', 'MikrotiksController');
+Route::resource('map', 'MapsController');
+
 // Route::auth();
 
 // Route::get('/home', 'HomeController@index');

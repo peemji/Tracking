@@ -1,29 +1,26 @@
 @extends('mikrotikLayouts.main')
-@section('page_title','Hello Page')
+@section('page_title','Maps')
 @section('content')
-
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                    @foreach($mikrotiks as $mikrotik)
+                    
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <a href="{{ url('mikrotiks/'.$mikrotik->id) }}">{{ $mikrotik->model }}</a>
+                                Google Maps
                             </div>
                             <div class="panel-body">
                                 {{ 'Body Index' }}
-                                <a href="{{ url('mikrotiks/map') }}">maps</a>
+                                <div class="map_canvas"></div>
                             </div>
                         </div>
-                    @endforeach
+                   
                     </div>
                 </div>
             </div>
         </div>
         <!-- /#page-content-wrapper -->
-
-
 @stop
